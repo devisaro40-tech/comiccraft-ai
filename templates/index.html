@@ -1,0 +1,31 @@
+<form method="post" action="/create" class="comic-form">
+    <div class="form-group">
+        <label for="prompt">Your Story Idea</label>
+        <textarea id="prompt" name="prompt" rows="5" placeholder="Ex: A cat astronaut who gets lost in space..." required></textarea>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="style">Art Style</label>
+            <select id="style" name="style">
+                <option value="anime">Anime</option>
+                <option value="cartoon">Cartoon</option>
+                <option value="manga">Manga</option>
+                <option value="realistic">Realistic</option>
+                <option value="3d">3D Pixar</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="panels">No. of Panels</label>
+            <select id="panels" name="panels">
+                <option value="4">4 Panels</option>
+                <option value="6" selected>6 Panels</option>
+                <option value="8">8 Panels</option>
+            </select>
+        </div>
+    </div>
+
+    <button type="submit" class="btn-primary">
+        Generate Comic 🚀
+    </button>
+</form>
